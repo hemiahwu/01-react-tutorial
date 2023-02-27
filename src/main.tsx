@@ -12,31 +12,38 @@ const authorStyle = {
   marginTop: "0.25rem",
 };
 
+// 组件1
 function BookList() {
   return (
     <section className="booklist">
-      <Book />
-      <Book />
-      <Book />
+      <Book title="他看见的未来" img={img} author={author} />
+      <Book title="我看见的未来" img={img} author={author}>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, impedit!
+      </Book>
+      <Book title="你看见的未来" img={img} author={author} />
     </section>
   );
 }
 
-// Book组件
-const Book = () => {
+interface Props {
+  title: string;
+  img: string;
+  author: string;
+  children?: string;
+}
+
+// 组件2
+const Book = ({ img, title, author, children }: Props) => {
   return (
     <article>
-      <Image />
-      <Title />
-      <Author />
+      <img src={img} alt="" />
+      <h1>{title}</h1>
+      <h4 style={authorStyle}>{author}</h4>
+
+      {children}
     </article>
   );
 };
-
-const Image = () => <img src={img} alt="" />;
-
-const Title = () => <h1>{title}</h1>;
-const Author = () => <h4 style={authorStyle}>{author}</h4>;
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
