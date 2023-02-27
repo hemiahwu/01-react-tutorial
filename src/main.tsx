@@ -1,20 +1,39 @@
 import ReactDOM from "react-dom/client";
+import "./index.css";
 
-const Person = () => <h2>米斯特吴</h2>;
-const Message = () => <p>Hello World</p>;
-
-function Greeting() {
+function BookList() {
   return (
-    <div>
-      <Person />
-      <Message />
-    </div>
+    <section className="booklist">
+      <Book />
+      <Book />
+      <Book />
+    </section>
   );
 }
 
-// ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
+// Book组件
+const Book = () => {
+  return (
+    <article className="book">
+      <Image />
+      <Title />
+      <Author />
+    </article>
+  );
+};
+
+const Image = () => (
+  <img
+    src="https://img10.360buyimg.com/n1/s200x200_jfs/t1/119522/15/20383/219156/61f20c1aEb50cbad5/5eeaffe8b9873f9d.jpg"
+    alt=""
+  />
+);
+
+const Title = () => <h1>我看见的未来</h1>;
+const Author = () => <h4>龙树谅</h4>;
+
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 
-root.render(<Greeting />);
+root.render(<BookList />);
