@@ -40,6 +40,10 @@ function BookList() {
   );
 }
 
+const handleClick = (data: Props) => {
+  console.log(data);
+};
+
 // 组件2
 const Book = ({ img, title, author }: Props) => {
   return (
@@ -47,6 +51,9 @@ const Book = ({ img, title, author }: Props) => {
       <img src={img} alt="" />
       <h1>{title}</h1>
       <h4 style={authorStyle}>{author}</h4>
+      <button onClick={() => handleClick({ title, author, img })}>
+        加入购物车
+      </button>
     </article>
   );
 };
