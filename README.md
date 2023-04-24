@@ -1,8 +1,16 @@
-# React
+# 01-React-tutorial
 
-## 第一章 最终效果演示
+## 第一章 课程代码
 
-###
+Git仓库地址: https://github.com/hemiahwu/01-react-tutorial
+
+百度网盘链接: https://pan.baidu.com/s/1DMKlzNEEV2Cwa6WjjMhQzQ?pwd=2mp3 提取码: 2mp3
+
+
+
+课程答疑微信: 
+
+<img src="https://i.postimg.cc/YCWHJWTw/Wechat-IMG233.jpg" alt="WechatIMG233"  />
 
 <div style="page-break-after: always;"></div>
 
