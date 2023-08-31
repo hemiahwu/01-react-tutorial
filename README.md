@@ -10,7 +10,7 @@ Git仓库地址: https://github.com/hemiahwu/01-react-tutorial
 
 课程答疑微信: 
 
-<img src="https://i.postimg.cc/YCWHJWTw/Wechat-IMG233.jpg" alt="WechatIMG233"  />
+web1024b
 
 <div style="page-break-after: always;"></div>
 
